@@ -1,100 +1,207 @@
-<html data-theme="null"><head>
-      <meta charset="UTF-8">
-      <title>♡ cinni's dream home ♡ </title>
-      <link rel="shortcut icon" href="/images/icon/wing_r.png" type="image/x-icon">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Minimal by Steve Smith</title>
 
-      <link href="style.css" rel="stylesheet" type="text/css" media="all">
-      <script src="https://melonking.net/scripts/frame-link.js"></script>
-      <script>
-      updateTitle = false; 
-      </script>
-
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-<body class="index">
- <div class="layout">
- <a href="https://cinni.net/" class="header"></a>
- <div class="marquee"><marquee scrollamount="2"> <img src="https://cinni.net/images/icon/wing_r.png" style="filter:var(--filter);"> welcome to cinni's dream home... we hope you enjoy your stay! <img src="https://cinni.net/images/icon/wing_l.png" style="filter:var(--filter);"></marquee></div> 
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Minimal</h1>
+        <p>A Theme for GitHub Pages</p>
+        <p class="view"><a href="http://github.com/orderedlist/minimal">View the Project on GitHub <small>orderedlist/minimal</small></a></p>
+        <ul>
+          <li><a href="https://github.com/orderedlist/minimal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/orderedlist/minimal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="http://github.com/orderedlist/minimal">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>GitHub Flavored Markdown</h1>
 
- <div class="potd">
- <a href="https://piclog.blue/profile.php?id=130"><img src="https://piclog.blue/latest.php?id=130" style="width:120px;height:120px;" alt="my piclog!"></a>
+        <p><em>View the <a href="http://github.github.com/github-flavored-markdown/sample_content.html">source of this content</a>.</em></p>
+
+        <p>Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:</p>
+
+        <p>Roses are red<br>
+        Violets are blue</p>
+
+        <p>The next paragraph has the same phrases, but now they are separated by two spaces and a newline character:</p>
+
+        <p>Roses are red<br><br>
+        Violets are blue</p>
+
+        <p>Oh, and one thing I cannot stand is the mangling of words with multiple underscores in them like perform_complicated_task or do_this_and_do_that_and_another_thing.</p>
+
+        <h2>A bit of the GitHub spice</h2>
+
+        <p>In addition to the changes in the previous section, certain references are auto-linked:</p>
+
+        <ul>
+          <li>SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2</li>
+          <li>User@SHA ref: <a href="https://github.com/mojombo/product/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo@<tt>be6a8cc</tt></a></li>
+          <li>User/Project@SHA: <a href="https://github.com/mojombo/god/commit/be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2" class="commit-link">mojombo/god@<tt>be6a8cc</tt></a></li>
+          <li>#Num: <a href="https://github.com/github/product/issues/1" class="issue-link" title="Baseline: What is up in the air right now?">#1</a></li>
+          <li>User/#Num: mojombo#1</li>
+          <li>User/Project#Num: <a href="https://github.com/mojombo/god/issues/1" class="issue-link" title="The server is not available (or you do not have permissions to access it)">mojombo/god#1</a></li>
+        </ul>
+
+        <p>These are dangerous goodies though, and we need to make sure email addresses don't get mangled:</p>
+
+        <p>My email addy is <a href="mailto:tom@github.com">tom@github.com</a>.</p>
+
+        <h2>Math is hard, let's go shopping</h2>
+
+        <p>In first grade I learned that 5 &gt; 3 and 2 &lt; 7. Maybe some arrows. 1 -&gt; 2 -&gt; 3. 9 &lt;- 8 &lt;- 7.</p>
+
+        <p>Triangles man! a^2 + b^2 = c^2</p>
+
+        <h2>We all like making lists</h2>
+
+        <p>The above header should be an H2 tag. Now, for a list of fruits:</p>
+
+        <ul>
+          <li>Red Apples</li>
+          <li>Purple Grapes</li>
+          <li>Green Kiwifruits</li>
+        </ul>
+
+        <p>Let's get crazy:</p>
+
+        <ol>
+          <li>
+            <p>This is a list item with two paragraphs. Lorem ipsum dolor<br>
+            sit amet, consectetuer adipiscing elit. Aliquam hendrerit<br>
+            mi posuere lectus.</p>
+
+            <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet<br>
+            vitae, risus. Donec sit amet nisl. Aliquam semper ipsum<br>
+            sit amet velit.</p>
+          </li>
+          <li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p></li>
+        </ol>
+
+        <p>What about some code <strong>in</strong> a list? That's insane, right?</p>
+
+        <ol>
+          <li>
+            <p>In Ruby you can map like this:</p>
+
+            <pre><code>['a', 'b'].map { |x| x.uppercase }</code></pre>
+          </li>
+          <li>
+            <p>In Rails, you can do a shortcut:</p>
+
+            <pre><code>['a', 'b'].map(&amp;:uppercase)</code></pre>
+          </li>
+        </ol>
+
+        <p>Some people seem to like definition lists</p>
+
+        <dl>
+          <dt>Lower cost</dt>
+          <dd>The new version of this product costs significantly less than the previous one!</dd>
+          <dt>Easier to use</dt>
+          <dd>We've changed the product so that it's much easier to use!</dd>
+        </dl>
+
+        <h2>I am a robot</h2>
+
+        <p>Maybe you want to print <code>robot</code> to the console 1000 times. Why not?</p>
+
+        <pre><code>def robot_invasion
+  puts("robot " * 1000)
+end
+</code></pre>
+
+        <p>You see, that was formatted as code because it's been indented by four spaces.</p>
+
+        <p>How about we throw some angle braces and ampersands in there?</p>
+
+        <pre><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+
+        <h2>Set in stone</h2>
+
+        <p>Preformatted blocks are useful for ASCII art:</p>
+
+        <pre>             ,-.
+    ,     ,-.   ,-.
+   / \   (   )-(   )
+   \ |  ,.&gt;-(   )-&lt;
+    \|,' (   )-(   )
+     Y ___`-'   `-'
+     |/__/   `-'
+     |
+     |
+     |    -hrr-
+  ___|_____________
+</pre>
+
+        <h2>Playing the blame game</h2>
+
+        <p>If you need to blame someone, the best way to do so is by quoting them:</p>
+
+        <blockquote>
+        <p>I, at any rate, am convinced that He does not throw dice.</p>
+        </blockquote>
+
+        <p>Or perhaps someone a little less eloquent:</p>
+
+        <blockquote>
+        <p>I wish you'd have given me this written question ahead of time so I<br>
+        could plan for it... I'm sure something will pop into my head here in<br>
+        the midst of this press conference, with all the pressure of trying to<br>
+        come up with answer, but it hadn't yet...</p>
+
+        <p>I don't want to sound like<br>
+        I have made no mistakes. I'm confident I have. I just haven't - you<br>
+        just put me under the spot here, and maybe I'm not as quick on my feet<br>
+        as I should be in coming up with one.</p>
+        </blockquote>
+
+        <h2>Table for two</h2>
+
+        <table>
+          <tbody>
+        <tr>
+            <th>ID</th>
+        <th>Name</th>
+        <th>Rank</th>
+          </tr>
+          <tr>
+            <td>1</td>
+        <td>Tom Preston-Werner</td>
+        <td>Awesome</td>
+          </tr>
+          <tr>
+            <td>2</td>
+        <td>Albert Einstein</td>
+        <td>Nearly as awesome</td>
+          </tr>
+        </tbody>
+        </table>
+
+        <h2>Crazy linking action</h2>
+
+        <p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from<br>
+        <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-   
-   
-    <div class="stats">    
-                        <center>
-       <a href="https://www.imood.com/users/cinni" target="_blank"><img src="https://moods.imood.com/display/uname-cinni/fg-6e45ff/bg-bdecff/imood.gif" class="imood"></a><br>
-      
-                <p id="current"></p>
-                
-                      
-      <button class="toggle" onclick="toggleTheme();window.location.reload();" style="margin:5px auto">change theme</button></center>
-                        
-      </div>
-  
-  
-    <div class="side">
-        <center>
-          <!--FURC STATUS-->
-            <a href="https://www.furcadia.com/"><img src="https://www.furcadia.com/services/online/myonlinestatus.php4?username=cinni&amp;online_url=https://cinni.net/images/icon/cinni-online.gif&amp;offline_url=https://cinni.net/images/icon/cinni-offline.png" style="filter:var(--filter);" alt="Furcadia!" border="0"></a>
-               <!-- 99GIF SHOP -->
-               <a href="https://99gifshop.neocities.org/" target="_blank"><img src="https://cinni.net/images/icon/99gifshop.png" class="button" style="filter:var(--filter);"></a>
-               <!--ENTRANCE OR EXIT-->
-               <a href="https://entranceorexit.net/" target="_blank"><img src="https://cinni.net/images/icon/eoe.png" class="button" style="filter:var(--filter);"></a>
-               <!--OEKAKI BOARD-->
-               <a href="https://oekaki.cinni.net/" target="_blank"><img src="https://cinni.net/images/button/cinni-oekaki-88x31.gif" class="button"></a>
-                <!--RSS-->
-                <a href="https://cinni.net/rss.xml" target="_blank"><img src="https://cinni.net/images/icon/rssbadge.png" style="padding:1px 0"></a>
-        </center>
-      </div>
-   
-   
-    <iframe src="/home" width="565" height="530" frameborder="0" scrolling="yes" name="frame" id="mainframe"></iframe>
-   
-   
-<nav>
-      <h2><img src="https://cinni.net/images/icon/wing_r.png" style="filter:var(--filter);"> Me <img src="https://cinni.net/images/icon/wing_l.png" style="filter:var(--filter);"></h2>
-      <ul>
-      <li><img src="https://cinni.net/images/icon/aboutme.png" style="filter:var(--filter);"> <a href="about.html" target="frame">about</a></li>
-      <li><img src="https://cinni.net/images/icon/art.png" style="filter:var(--filter);"> <a href="https://cinni.net/art/" target="frame">art</a></li>
-      <li><img src="https://cinni.net/images/icon/games.png" style="filter:var(--filter);"> <a href="games.html" target="frame">games</a></li>
-      <li><img src="https://cinni.net/images/icon/music.png" style="filter:var(--filter);"> <a href="https://cinni.net/music.html" target="frame">music</a></li>
-      <li><img src="https://cinni.net/images/icon/books.png" style="filter:var(--filter);"> <a href="https://cinni.net/me/books/" target="frame">library</a></li>
-      <li><img src="https://cinni.net/images/icon/tombstone.png" style="filter:var(--filter);"> <a href="https://cinni.net/shrine.html" target="frame">shrines</a></li>
-      <li><img src="https://cinni.net/images/icon/wing_l.png" style="filter:var(--filter);"> <a href="https://cinni.net/furc/" target="_blank"> furcadia</a></li>
-      <li><img src="https://cinni.net/images/icon/dolly.png" style="filter:var(--filter);"> <a href="https://cinni.net/doll.html" target="frame">dollz center</a></li>
-      <li><img src="https://cinni.net/images/icon/shiny-heart.png" style="filter:var(--filter);"> <a href="https://cinni.net/cliques.html" target="frame">cliques</a></li>
-      </ul>
-
-      <h2> <img src="https://cinni.net/images/icon/wing_r.png" style="filter:var(--filter);"> You <img src="https://cinni.net/images/icon/wing_l.png" style="filter:var(--filter);"></h2>
-      <ul>
-      <li><img src="https://cinni.net/images/icon/chubby-pencil.png" style="filter:var(--filter);"> <a href="https://cinni.net/resources.html" target="frame">art resources</a></li>
-      <li><img src="https://cinni.net/images/icon/adoptioncenter.png" style="filter:var(--filter);"> <a href="https://cinni.net/adopt.html" target="frame">adoption center</a></li>
-      <li><img src="https://cinni.net/images/icon/teddy.png" style="filter:var(--filter);"> <a href="https://cinni.net/toybox/" target="frame">toy box</a></li>
-      <li><img src="https://cinni.net/images/icon/goody-bag.png" style="filter:var(--filter);"> <a href="https://cinni.net/web.html" target="frame">web goodies</a></li>
-      <li><img src="https://cinni.net/images/icon/kaomoji.png" style="filter:var(--filter);"> <a href="https://cinni.net/kaomoji.html" target="frame">kaomoji</a></li>
-      <li><img src="https://cinni.net/images/icon/font.gif" style="filter:var(--filter);"> <a href="https://cinni.net/font.html" target="frame">fonts</a></li>
-      <li><img src="https://cinni.net/images/icon/wrench.png" style="filter:var(--filter);">  <a href="https://cinni.net/theme/" target="frame">downloads</a></li>
-      <li><img src="https://cinni.net/images/icon/sparkle.gif" style="filter:var(--filter);">  <a href="https://cinni.net/sitename.html" target="frame"> URL generator </a></li>
-      <li><img src="https://cinni.net/images/icon/magicball.png" style="filter:var(--filter);"> <a href="https://cinni.net/globe.html" target="frame"> globe maker </a></li>
-      </ul>
-                     
-<h2><img src="https://cinni.net/images/icon/wing_r.png" style="filter:var(--filter);"> Site <img src="https://cinni.net/images/icon/wing_l.png" style="filter:var(--filter);"></h2> 
-<ul>
-        <li><img src="https://cinni.net/images/icon/chain-link.gif" style="filter:var(--filter);"> <a href="https://cinni.net/links.html" target="frame">cool links</a></li>
-        <!--li><img src="https://cinni.net/images/icon/sad-cat.png" style="filter:var(--filter);">  <a href="https://cinni.net/about/wip.html" target="frame">purrgatory</a></li-->
-        <li><img src="https://cinni.net/images/icon/guestbook.png" style="filter:var(--filter);"> <a href="http://users2.smartgb.com/g/g.php?a=s&amp;i=g26-36688-af" target="_blank">guestbook</a></li>
-      <li><img src="https://cinni.net/images/icon/ko-fi.png" style="filter:var(--filter);"> <a href="https://ko-fi.com/cinnii" target="_blank"> ko-fi</a></li>
-</ul>
-
-   </nav>
-
-  
-      <script src="https://99gifshop.neocities.org/theme-control.js"></script>
-      
-   <script data-goatcounter="https://cinni.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
-      
-<script src="https://test.cinni.net/weather-master/dist/weather.min.js"></script>
-<script src="https://cinni.net/weather/myweather.js"></script>
-         
-  
-</div></body></html>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
