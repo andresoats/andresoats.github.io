@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'CMS'; 
+    src: url('./fonts/CMS.otf') format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
 body {
   background-color: #252525;
   padding:50px;
-  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 14px/1.5 "CMS",-apple-system, BlinkMacSystemFont,  Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#bababa;
   font-weight:400;
 }
@@ -67,7 +74,7 @@ blockquote {
 }
 
 code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  font-family:"CMS", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color:#fff;
 }
 
