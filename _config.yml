@@ -1,0 +1,81 @@
+# Site settings
+title: "Andrés Oats García"
+description: "Andrés Oats García's Personal Webpage"
+url: "https://andresog.github.io"
+baseurl: ""
+
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Site Author
+author:
+  name: "Andrés Oats García"
+  bio: "Predoc at Stanford University"
+  location: "Palo Alto, California"
+  email: "andresog [at] stanford [dot] edu"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@university.edu"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Blog settings
+paginate: 5
+paginate_path: /blog/page:num/
+timezone: America/New_York # Change to your timezone
