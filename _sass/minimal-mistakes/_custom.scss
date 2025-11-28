@@ -17,10 +17,6 @@ html {
   }
 }
 
-body {
-  font-family: 'Computer Modern Sans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Computer Modern Sans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
@@ -47,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  font-family: 'Computer Modern Sans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
