@@ -1,0 +1,175 @@
+/* Computer Modern Sans Serif Font */
+
+/* Font settings */
+html {
+  font-size: 14px; 
+  
+  @include breakpoint($medium) {
+    font-size: 15px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 16px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 17px;
+  }
+}
+
+body {
+  font-family: 'Computer Modern Sans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Computer Modern Sans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+/* Dark mode styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --sidebar-bg: #f3f6fa;
+  --border-color: #e1e5e9;
+  --code-bg: #f7f7f7;
+  --link-color: #0366d6;
+  --masthead-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e1e1e1;
+  --sidebar-bg: #252525;
+  --border-color: #404040;
+  --code-bg: #2d2d2d;
+  --link-color: #58a6ff;
+  --masthead-bg: #252525;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar {
+  background-color: var(--sidebar-bg);
+}
+
+.masthead {
+  background-color: var(--masthead-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page__content {
+  background-color: var(--bg-color);
+}
+
+code {
+  background-color: var(--code-bg);
+  color: var(--text-color);
+}
+
+pre {
+  background-color: var(--code-bg);
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* BibTeX citation styles */
+.citation-container {
+  margin-top: 10px;
+}
+
+.bibtex-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bibtex-btn:hover {
+  background-color: #0056b3;
+}
+
+.bibtex-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--code-bg);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.copy-btn:hover {
+  background-color: #218838;
+}
+
+.copy-btn.copied {
+  background-color: #6c757d;
+}
+
+/* Dark mode adjustments for buttons */
+[data-theme="dark"] .bibtex-btn {
+  background-color: #0d6efd;
+}
+
+[data-theme="dark"] .bibtex-btn:hover {
+  background-color: #0b5ed7;
+}
+
+[data-theme="dark"] .copy-btn {
+  background-color: #198754;
+}
+
+[data-theme="dark"] .copy-btn:hover {
+  background-color: #157347;
+}

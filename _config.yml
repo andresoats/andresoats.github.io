@@ -13,13 +13,16 @@ author:
   bio: "Predoc at Stanford University"
   location: "Palo Alto, California"
   email: "andresog [at] stanford [dot] edu"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@university.edu"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=YOUR_ID"
+
+
+# Add to your existing _config.yml
+head_scripts:
+  - /assets/js/custom.js
+
+# Custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Reading Files
 include:
