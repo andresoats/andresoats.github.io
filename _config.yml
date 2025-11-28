@@ -17,7 +17,7 @@ author:
 
 # Add to your existing _config.yml
 head_scripts:
-  - /assets/js/custom.js
+  - /_assets/js/custom.js
 
 # Custom CSS
 sass:
@@ -82,3 +82,4 @@ defaults:
 paginate: 5
 paginate_path: /blog/page:num/
 timezone: America/New_York # Change to your timezone
+future: false
