@@ -1,4 +1,4 @@
-// Dark mode functionality
+// Dark mode and BibTeX functionality
 document.addEventListener('DOMContentLoaded', function() {
   // Create dark mode toggle button
   const darkModeToggle = document.createElement('button');
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeToggle.innerHTML = theme === 'dark' ? '☀️' : '🌙';
   }
 
-  // BibTeX functionality
-  initializeBibtexButtons();
+  // Initialize BibTeX functionality (with delay for Jekyll)
+  setTimeout(initializeBibtexButtons, 100);
 });
 
 // BibTeX citation functionality
@@ -54,7 +54,11 @@ function initializeBibtexButtons() {
   const copyBtns = document.querySelectorAll('.copy-btn');
   copyBtns.forEach(btn => {
     btn.addEventListener('click', function() {
-      const bibtexText = this.parentElement.textContent.replace('Copy', '').trim();
+      // Clone parent element and remove copy button to get clean text
+      const container = this.parentElement.cloneNode(true);
+      const copyBtn = container.querySelector('.copy-btn');
+      if (copyBtn) copyBtn.remove();
+      const bibtexText = container.textContent.trim();
       
       navigator.clipboard.writeText(bibtexText).then(() => {
         this.textContent = 'Copied!';
@@ -68,9 +72,3 @@ function initializeBibtexButtons() {
     });
   });
 }
-
-// Reinitialize after page loads (for Jekyll)
-document.addEventListener('DOMContentLoaded', function() {
-  // Small delay to ensure all content is loaded
-  setTimeout(initializeBibtexButtons, 100);
-});
